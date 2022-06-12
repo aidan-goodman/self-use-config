@@ -1,0 +1,29 @@
+" vim's default registers and system clipboard sharing
+set clipboard=unnamed
+
+set history=1000
+" copy in select mode
+if has("clipboard")
+    vnoremap <C-C>
+endif
+
+" use relative line numbers
+set number
+set relativenumber
+
+set scrolloff=10
+
+" set the matching pattern, when you enter an opening bracket, it will match the corresponding closing bracket
+set showmatch
+set showmode
+
+" search
+" search highlight
+" set hlsearch
+set incsearch
+set ignorecase
+set smartcase
+
+" set leader key
+nnoremap <SPACE> <Nop>
+let mapleader = " "
