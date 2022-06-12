@@ -1,0 +1,31 @@
+#!/usr/bin/bash
+# set wsl host for Windows
+# win hosts file path
+win_hosts_path="/mnt/c/Windows/System32/drivers/etc/hosts"
+# set DomainName for WSL
+wsl_name="kali.wsl"
+# get WSL ip
+wsl_ip=$(ifconfig eth0 | grep -w inet | awk '{print $2}')
+# Determine WSL host already exist?
+wsl_host=$(cat ${win_hosts_path} | grep -wn ${wsl_name})
+# if already exist,change it;else append to the end
+if [[ ${wsl_host} ]]
+then
+    # find the line of host
+    wsl_host_line=$(echo ${wsl_host} | awk -F: 'NR==1{print $1}')
+    # use temp file to transfer
+    tempHost="/home/aidan/.tempHost"
+    # Beacause Permission denied,use `sed` write to temp file
+    sed "${wsl_host_line}c ${wsl_ip} ${wsl_name}" ${win_hosts_path} > ${tempHost}
+    # use temp file to cover
+    cat ${tempHost} > ${win_hosts_path}
+    # print for review
+    # cat ${win_hosts_path}
+else
+    # Add to the end of the host file
+    echo -e "\n${wsl_ip} ${wsl_name}" >> ${win_hosts_path}
+
+    # cat ${win_hosts_path}
+fi
+
+echo "${wsl_ip} ${wsl_name}"
