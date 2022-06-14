@@ -11,21 +11,21 @@
           "type": "session",
           "style": "plain",
           "properties": {
-            "user_info_separator": "<#ff5555>@</>",
-            "prefix": "╭─[",
-            "postfix": "]─",
+            "user_info_separator": "<#ce4b4b>`@`</>",
+            "prefix": "<#506ACF>╭─[</>",
+            "postfix": "<#506ACF>]─</>",
             "user_color": "#ce4b4b",
             "host_color": "#ce4b4b"
           }
         },
         {
           "type": "path",
-          "style": "plain",
-          "foreground": "#ce4b4b",
+          "style": "powerline",
+          "foreground": "#000000",
           "properties": {
-            "prefix": "<#ffffff>[</>",
-            "postfix": "<#ffffff>]</>",
-            "style": "folder",
+            "prefix": "<#506ACF>[</>",
+            "postfix": "<#506ACF>]</>",
+            "style": "letter",
             "enable_hyperlink": true
           }
         },
@@ -202,16 +202,16 @@
           "properties": {
             "prefix": "",
             "postfix": "",
-            "text": "╰─"
+            "text": "<#506ACF>╰─</>"
           }
         },
         {
           "type": "git",
           "style": "plain",
-          "foreground": "#e0f8ff",
+          "foreground": "#5fd7ff",
           "properties": {
-            "prefix": "<#ffffff>[</>",
-            "postfix": "<#ffffff>]-</>",
+            "prefix": "<#5fd7ff>[</>",
+            "postfix": "<#5fd7ff>]-</>",
             "branch_icon": "\ue725 ",
             "fetch_status": true,
             "fetch_upstream_icon": true,
