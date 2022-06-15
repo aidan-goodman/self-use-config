@@ -12,7 +12,7 @@
           "style": "plain",
           "properties": {
             "user_info_separator": "<#ce4b4b>`@`</>",
-            "prefix": "<#506ACF>╭─[</>",
+            "prefix": "<#506ACF>\n╭─[</>",
             "postfix": "<#506ACF>]─</>",
             "user_color": "#ce4b4b",
             "host_color": "#ce4b4b"
@@ -23,7 +23,7 @@
           "style": "powerline",
           "foreground": "#000000",
           "properties": {
-            "max_depth": 2,
+            "max_depth": 3,
             "prefix": "<#506ACF>[</>",
             "postfix": "<#506ACF>]</>", 
             "style": "agnoster_short",
@@ -53,7 +53,7 @@
           "properties": {
             "prefix": "<#ffffff>[</>",
             "postfix": "<#ffffff>]</>",
-            "time_format": "_2,15:04"
+            "time_format": "_2:15:04"
         }
         }
       ]

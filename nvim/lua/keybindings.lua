@@ -52,6 +52,8 @@ map("n", "<C-k>", "5k", opt)
 -- ctrl u / ctrl + d  只移动9行，默认移动半屏
 map("n", "<C-u>", "9k", opt)
 map("n", "<C-d>", "9j", opt)
+-- ;y 复制内容到 windows
+map("v", ";y", "!/mnt/c/Windows/System32/clip.exe<cr>u", opt)
 
 -- insert 模式下，跳到行首行尾
 map("i", "<C-h>", "<ESC>I", opt)
