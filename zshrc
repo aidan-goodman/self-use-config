@@ -93,7 +93,7 @@ fi
 
 configure_prompt() {
     prompt_symbol=㉿
-	# prompt_exit=ﬀ
+	prompt_exit=ﬀ
     # Skull emoji for root terminal
     #[ "$EUID" -eq 0 ] && prompt_symbol=💀
 	
@@ -103,7 +103,8 @@ configure_prompt() {
 	
     case "$PROMPT_ALTERNATIVE" in
         twoline)
-			PROMPT=$'%F{%(#.blue.green)}╭─${debian_chroot:+($debian_chroot)─}${VIRTUAL_ENV:+($(basename $VIRTUAL_ENV))─}(%B%F{%(#.red.blue)}%n'$prompt_symbol$'%m%b%F{%(#.blue.green)})-[%B%F{reset}%(6~.%-1~/…/%4~.%5~)%b%F{%(#.blue.green)}]\n╰─%F{81}$(parse_git_branch)%f%B%(#.%F{red}#.%F{blue}$)%b%F{reset} '
+			PROMPT=$'%F{%(#.blue.green)}╭─${debian_chroot:+($debian_chroot)─}${VIRTUAL_ENV:+($(basename $VIRTUAL_ENV))─}(%B%F{%(#.red.blue)}%n'$prompt_symbol$'%m%b%F{%(#.blue.green)})─[%B%F{reset}%(6~.%-1~/…/%4~.%5~)%b%F{%(#.blue.green)}]\n╰─%F{81}$(parse_git_branch)%F{red}$prompt_exit%b%F{reset} '
+			# %f%B%(#.%F{red}#.%F{blue}$)
             # Right-side prompt with exit codes and background processes
             #RPROMPT=$'%(?.. %? %F{red}%B⨯%b%F{reset})%(1j. %j %F{yellow}%B⚙%b%F{reset}.)'
             ;;
