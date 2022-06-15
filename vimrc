@@ -114,3 +114,5 @@ set noerrorbells
 set visualbell
 set history=1000
 set autoread
+
+map ;y : !/mnt/c/Windows/System32/clip.exe<cr>u
