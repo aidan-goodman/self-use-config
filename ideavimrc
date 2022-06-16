@@ -1,29 +1,26 @@
-" vim's default registers and system clipboard sharing
-set clipboard=unnamed
+" M->cmd, A->option, C->control
+" <ESC> - escape, <BS> - backspace, <CR> - return
 
-set history=1000
+" set leader key
+let mapleader = " "
+
+" enable multi cursor
+set multiple-cursors
+
+" vim's default registers and system clipboard sharing
+set clipboard=unnamedplus,unnamed
 " copy in select mode
 if has("clipboard")
     vnoremap <C-C>
 endif
 
-" use relative line numbers
+" use relative line numbers and line
 set number
 set relativenumber
-
 set scrolloff=10
 
-" set the matching pattern, when you enter an opening bracket, it will match the corresponding closing bracket
+" set the matching bracket
 set showmatch
 set showmode
 
-" search
-" search highlight
-" set hlsearch
-set incsearch
-set ignorecase
-set smartcase
-
-" set leader key
-nnoremap <SPACE> <Nop>
-let mapleader = " "
+set ignorecase smartcase hlsearch incsearch

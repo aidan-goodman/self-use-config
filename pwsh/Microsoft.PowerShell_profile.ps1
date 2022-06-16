@@ -12,7 +12,7 @@ Import-Module PSReadLine
 Import-Module ZLocation
 
 # 设置 PowerShell 主题
-Set-PoshPrompt atomicBit-aidan
+Set-PoshPrompt kali-aidan
 #------------------------------- Import Modules END   -------------------------------
 
 #-------------------------------  Set Hot-keys BEGIN  -------------------------------
