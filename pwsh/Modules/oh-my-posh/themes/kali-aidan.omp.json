@@ -25,19 +25,9 @@
           "properties": {
             "max_depth": 3,
             "prefix": "<#506ACF>[</>",
-            "postfix": "<#506ACF>]</>", 
+            "postfix": "<#506ACF>]</>",
             "style": "agnoster_short",
             "enable_hyperlink": true
-          }
-        },
-        {
-          "type": "root",
-          "style": "plain",
-          "foreground": "#ce4b4b",
-          "properties": {
-            "prefix": "<#ffffff>─(</>",
-            "postfix": "<#ffffff>)</>",
-            "root_icon": "#"
           }
         }
       ]
@@ -54,7 +44,7 @@
             "prefix": "<#ffffff>[</>",
             "postfix": "<#ffffff>]</>",
             "time_format": "_2:15:04"
-        }
+          }
         }
       ]
     },
@@ -82,7 +72,7 @@
             "branch_icon": "\ue725 ",
             "fetch_status": true,
             "fetch_upstream_icon": true,
-            "template": "{{ .HEAD }}{{ if .Staging.Changed }}<#00AA00> ● {{ .Staging.String }}</>{{ end }}{{ if .Working.Changed }}<#D75F00> ● {{ .Working.String }}</>{{ end }}"
+            "template": "{{ .HEAD }}"
           }
         },
         {

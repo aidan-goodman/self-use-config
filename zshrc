@@ -98,7 +98,7 @@ configure_prompt() {
     #[ "$EUID" -eq 0 ] && prompt_symbol=💀
 	
 	function parse_git_branch() {
-		git branch 2> /dev/null | sed -n -e 's/^\* \(.*\)/[\1]/p'
+		git branch 2> /dev/null | sed -n -e 's/^\* \(.*\)/[ \1]-/p'
 	}
 	
     case "$PROMPT_ALTERNATIVE" in
