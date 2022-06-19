@@ -10,4 +10,5 @@ self-use configuration file, including (neo)vim, zsh, pwsh, other....
 4. fourth(eb77ca7): change posh style to kali's zsh
 5. fifth(4dbfa89): change zsh exit-symbol and remove excess status(go, node...) of posh
 6. sixth(c987edf): optimize posh similarity to kali‘s zsh, add (neo)vim clipboard sharing
-7. seventh(): adjust .ideavimrc and detail optimization
+7. seventh(9959ad5): adjust .ideavimrc and detail optimization
+8. eighth(): add win-vind and setting

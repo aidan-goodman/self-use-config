@@ -1,0 +1,31 @@
+" => set --------------------{{{1
+" Initial Mode
+set initmode=i
+
+" Cursor Acceleration
+set cursor_accel=10
+
+" Cursor Weight
+set cursor_tweight=360
+
+" Font Size
+set cmd_fontsize=24
+
+" Fade Out Time (s)
+set cmd_fadeout=3
+
+" EasyClick Font Size
+set easyclick_fontsize=22
+
+" EasyClick Font Weight
+set easyclick_fontweight=800
+
+" EasyClick Font Name
+set easyclick_fontname=MSYH
+" 微软雅黑
+
+" EasyClick Font Color
+set easyclick_fontcolor=000000
+
+" EasyClick Font Background Color
+set easyclick_bgcolor=fae26b
