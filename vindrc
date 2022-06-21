@@ -1,9 +1,6 @@
 " => set --------------------{{{1
-" Initial Mode
-set initmode=i
-
 " Cursor Acceleration
-set cursor_accel=10
+set cursor_accel=15
 
 " Cursor Weight
 set cursor_tweight=360
@@ -21,11 +18,32 @@ set easyclick_fontsize=22
 set easyclick_fontweight=800
 
 " EasyClick Font Name
-set easyclick_fontname=MSYH
 " 微软雅黑
+set easyclick_fontname=MSYH
 
 " EasyClick Font Color
 set easyclick_fontcolor=000000
 
 " EasyClick Font Background Color
 set easyclick_bgcolor=fae26b
+
+" Vertical Scroll Speed
+set vscroll_speed=45
+
+" Horizontal Scroll Speed
+set hscroll_speed=20
+
+" Vertical Page Scroll Ratio
+set vscroll_pageratio=0.15
+
+" Horizontal Page Scroll Ratio
+set hscroll_pageratio=0.15
+
+" => map --------------------{{{1
+" GUI Normal Mode
+ennoremap <win-Enter> to_gui_normal
+evnoremap <win-Enter> to_gui_normal
+gnnoremap <win-Enter> to_gui_normal
+gvnoremap <win-Enter> to_gui_normal
+inoremap <win-Enter> to_gui_normal
+rnoremap <win-Enter> to_gui_normal
