@@ -12,3 +12,5 @@ self-use configuration file, including (neo)vim, zsh, pwsh, other....
 6. sixth(c987edf): optimize posh similarity to kali‘s zsh, add (neo)vim clipboard sharing
 7. seventh(9959ad5): adjust .ideavimrc and detail optimization
 8. eighth(): add win-vind and setting
+
+*no major changes in the future, no longer update README*
