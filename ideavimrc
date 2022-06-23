@@ -1,26 +1,34 @@
 " M->cmd, A->option, C->control
-" <ESC> - escape, <BS> - backspace, <CR> - return
 
 " set leader key
 let mapleader = " "
 
-" enable multi cursor
-set multiple-cursors
-
-" vim's default registers and system clipboard sharing
+" clipboard sharing
 set clipboard=unnamedplus,unnamed
+set clipboard+=ideaput
 " copy in select mode
 if has("clipboard")
     vnoremap <C-C>
 endif
 
-" use relative line numbers and line
+" use line numbers
 set number
 set relativenumber
 set scrolloff=10
+" enable multi cursor
+set multiple-cursors
 
-" set the matching bracket
+" show more info
 set showmatch
 set showmode
+set showcmd
 
-set ignorecase smartcase hlsearch incsearch
+" search
+"set hlsearch
+set incsearch
+set ignorecase
+set smartcase
+
+" move half page faster
+nnoremap <Leader>d  <C-d>
+nnoremap <Leader>u  <C-u>
