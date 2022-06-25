@@ -1,0 +1,92 @@
+{
+  "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+  "final_space": false,
+  "osc99": true,
+  "blocks": [
+    {
+      "type": "prompt",
+      "alignment": "left",
+      "segments": [
+        {
+          "type": "session",
+          "style": "plain",
+          "properties": {
+            "user_info_separator": "<#ce4b4b>`@`</>",
+            "prefix": "<#506ACF>\n╭─[</>",
+            "postfix": "<#506ACF>]─</>",
+            "user_color": "#ce4b4b",
+            "host_color": "#ce4b4b"
+          }
+        },
+        {
+          "type": "path",
+          "style": "powerline",
+          "foreground": "#000000",
+          "properties": {
+            "max_depth": 3,
+            "prefix": "<#506ACF>[</>",
+            "postfix": "<#506ACF>]</>",
+            "style": "agnoster_short",
+            "enable_hyperlink": true
+          }
+        }
+      ]
+    },
+    {
+      "type": "prompt",
+      "alignment": "right",
+      "segments": [
+        {
+          "type": "time",
+          "style": "plain",
+          "foreground": "#000000",
+          "properties": {
+            "prefix": "<#ffffff>[</>",
+            "postfix": "<#ffffff>]</>",
+            "time_format": "_2:15:04"
+          }
+        }
+      ]
+    },
+    {
+      "type": "prompt",
+      "alignment": "left",
+      "newline": true,
+      "segments": [
+        {
+          "type": "text",
+          "style": "plain",
+          "properties": {
+            "prefix": "",
+            "postfix": "",
+            "text": "<#506ACF>╰─</>"
+          }
+        },
+        {
+          "type": "git",
+          "style": "plain",
+          "foreground": "#5fd7ff",
+          "properties": {
+            "prefix": "<#5fd7ff>[</>",
+            "postfix": "<#5fd7ff>]-</>",
+            "branch_icon": "\ue725 ",
+            "fetch_status": true,
+            "fetch_upstream_icon": true,
+            "template": "{{ .HEAD }}"
+          }
+        },
+        {
+          "type": "exit",
+          "style": "plain",
+          "foreground": "#ce4b4b",
+          "properties": {
+            "prefix": "\ue285ﬀ",
+            "display_exit_code": false,
+            "always_enabled": true,
+            "error_color": "#ef5350"
+          }
+        }
+      ]
+    }
+  ]
+}
