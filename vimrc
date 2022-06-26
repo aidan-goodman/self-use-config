@@ -75,7 +75,6 @@ set shiftwidth=4
 " appearance
 set number
 set relativenumber
-set nu
 augroup relative_numbser
     autocmd!
     autocmd InsertEnter * :set norelativenumber
