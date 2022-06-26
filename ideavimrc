@@ -3,7 +3,7 @@
 " set leader key
 let mapleader = " "
 
-" clipboard sharing
+""" clipboard sharing ------------------
 set clipboard=unnamedplus,unnamed
 set clipboard+=ideaput
 " copy in select mode
@@ -11,24 +11,27 @@ if has("clipboard")
     vnoremap <C-C>
 endif
 
-" use line numbers
-set number
-set relativenumber
+""" use line numbers ------------------
+set number relativenumber
 set scrolloff=10
-" enable multi cursor
-set multiple-cursors
 
-" show more info
+""" show more info ------------------
 set showmatch
 set showmode
 set showcmd
 
-" search
+""" search ------------------
 "set hlsearch
 set incsearch
 set ignorecase
 set smartcase
 
-" move half page faster
+""" move half page faster ------------------
+
 nnoremap <Leader>d  <C-d>
 nnoremap <Leader>u  <C-u>
+
+""" Idea specific settings ------------------
+set ideajoin
+set ideastatusicon=gray
+set idearefactormode=keep
