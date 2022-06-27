@@ -263,7 +263,7 @@ fi
 
 # custom setting
 # activate z.lua
-eval "$(lua /root/.zsh/plugins/z.lua-1.8.15/z.lua --init zsh enhanced once echo)"
+eval "$(lua ~/.zsh/plugins/z.lua/z.lua --init zsh enhanced once echo)"
 # activate plugins
 source ~/.zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source ~/.zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
