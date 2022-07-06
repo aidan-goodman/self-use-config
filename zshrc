@@ -92,8 +92,9 @@ if [ -n "$force_color_prompt" ]; then
 fi
 
 configure_prompt() {
-    prompt_symbol=㉿
-	prompt_exit=ﬀ
+    # prompt_symbol=㉿
+    prompt_symbol=\'\'
+    prompt_exit=ﬀ
     # Skull emoji for root terminal
     #[ "$EUID" -eq 0 ] && prompt_symbol=💀
 	
@@ -103,7 +104,7 @@ configure_prompt() {
 	
     case "$PROMPT_ALTERNATIVE" in
         twoline)
-			PROMPT=$'%F{%(#.blue.green)}╭─${debian_chroot:+($debian_chroot)─}${VIRTUAL_ENV:+($(basename $VIRTUAL_ENV))─}(%B%F{%(#.red.blue)}%n'$prompt_symbol$'%m%b%F{%(#.blue.green)})─[%B%F{reset}%(6~.%-1~/…/%4~.%5~)%b%F{%(#.blue.green)}]\n╰─%F{81}$(parse_git_branch)%F{red}$prompt_exit%b%F{reset} '
+	        PROMPT=$'%F{blue}╭─${debian_chroot:+($debian_chroot)─}${VIRTUAL_ENV:+($(basename $VIRTUAL_ENV))─}(%B%F{red}%n'$prompt_symbol$'%m%b%F{blue})─[%B%F{reset}%(6~.%-1~/…/%4~.%5~)%b%F{blue}]\n╰─%F{81}$(parse_git_branch)%F{red}$prompt_exit%b%F{reset} '
 			# %f%B%(#.%F{red}#.%F{blue}$)
             # Right-side prompt with exit codes and background processes
             #RPROMPT=$'%(?.. %? %F{red}%B⨯%b%F{reset})%(1j. %j %F{yellow}%B⚙%b%F{reset}.)'
@@ -255,6 +256,8 @@ alias l='ls -CF'
 # ==========[custom]==========
 # custom aliases
 alias tailf='tail -f'
+alias mycli='mycli -u root -p "Jx34&"'
+alias iredis='/home/aidan/local/iredis/iredis --rainbow --decode=utf-8'
 
 # enable command-not-found if installed
 if [ -f /etc/zsh_command_not_found ]; then
@@ -273,3 +276,21 @@ autoload -U colors && colors
 
 # Show current timestamp
 RPROMPT="%*"
+
+# config java ENV
+export JAVA_HOME=/usr/lib/jvm/default-java
+export MAVEN_HOME=/usr/share/maven
+
+# config go ENV
+export GOROOT=/usr/lib/go
+export GOPATH=/home/aidan/gopath
+export GO111MODULE=on
+export GOPROXY=https://goproxy.cn,direct
+
+# Merge PATH
+export PATH=$PATH:$GOROOT/bin:$GOPATH/bin:$JAVA_HOME/bin:$MAVEN_HOME/bin
+
+# boot sh
+echo "==========[start]=========="
+bash /etc/init.d/host-config
+echo "==========[ end ]=========="
