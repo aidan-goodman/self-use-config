@@ -2,26 +2,26 @@ local packer = require("packer")
 packer.startup({
   function(use)
     -- Packer 可以管理自己本身
-    use ("wbthomason/packer.nvim")
+    use("wbthomason/packer.nvim")
     --------------------- colorschemes --------------------
     -- tokyonight
     use("folke/tokyonight.nvim")
     -- nightfox
     use("EdenEast/nightfox.nvim")
     -- nvim-tree
-    use({ "kyazdani42/nvim-tree.lua", requires = "kyazdani42/nvim-web-devicons" })
+    use({"kyazdani42/nvim-tree.lua", requires = "kyazdani42/nvim-web-devicons"})
     -- bufferline
-    use({ "akinsho/bufferline.nvim", requires = { "kyazdani42/nvim-web-devicons", "moll/vim-bbye" }})
+    use({"akinsho/bufferline.nvim", requires = {"kyazdani42/nvim-web-devicons", "moll/vim-bbye"}})
       -- lualine
-    use({ "nvim-lualine/lualine.nvim", requires = { "kyazdani42/nvim-web-devicons" } })
+    use({"nvim-lualine/lualine.nvim", requires = {"kyazdani42/nvim-web-devicons"}})
     use("arkav/lualine-lsp-progress")
     -- telescope
-    use { 'nvim-telescope/telescope.nvim', requires = { "nvim-lua/plenary.nvim" } }
+    use {'nvim-telescope/telescope.nvim', requires = {"nvim-lua/plenary.nvim"}}
     -- telescope extensions
-    use "LinArcX/telescope-env.nvim"
+    use ("LinArcX/telescope-env.nvim")
     -- dashboard-nvim
-    -- use("glepnir/dashboard-nvim")
-    use({"glepnir/dashboard-nvim", commit = "a36b3232c98616149784f2ca2654e77caea7a522" })
+    -- todo update use("glepnir/dashboard-nvim")$$$$$$$$$$$$$$$$$$$$
+    use({"glepnir/dashboard-nvim", commit = "a36b3232c98616149784f2ca2654e77caea7a522"})
     -- project
     use("ahmedkhalf/project.nvim")
   end,
