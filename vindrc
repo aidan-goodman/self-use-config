@@ -48,5 +48,9 @@ gvnoremap <win-Enter> to_gui_normal
 inoremap <win-Enter> to_gui_normal
 rnoremap <win-Enter> to_gui_normal
 
+" Visual Mode to Insert
+evnoremap i to_insert
+gvnoremap i to_insert
+
 " EasyClick (Left Click)
 gnnoremap F easy_click_left

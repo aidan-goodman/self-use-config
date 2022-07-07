@@ -1,1 +1,0 @@
-code --list-extensions > extensions.json && sed -i 's/.*/\t\t\"&\",/' extensions.json && sed -i '$ s/.$//' extensions.json &&sed -i '1i {\n\t\"recommendations\": [' extensions.json && sed -i '$a \\t]\n}' extensions.json
