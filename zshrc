@@ -256,8 +256,9 @@ alias l='ls -CF'
 # ==========[custom]==========
 # custom aliases
 alias tailf='tail -f'
-alias mycli='mycli -u root -p "Jx34&"'
+alias mycli-local='mycli -u root -h localhost -p "Jx34&"'
 alias iredis='/home/aidan/local/iredis/iredis --rainbow --decode=utf-8'
+alias vscode-back-up-extensions='sh /home/aidan/local/script/wsl-vscode-back-up-extensions'
 
 # enable command-not-found if installed
 if [ -f /etc/zsh_command_not_found ]; then

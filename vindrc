@@ -1,6 +1,6 @@
 " => set --------------------{{{1
 " Cursor Acceleration
-set cursor_accel=15
+set cursor_accel=20
 
 " Cursor Weight
 set cursor_tweight=360
@@ -47,3 +47,6 @@ gnnoremap <win-Enter> to_gui_normal
 gvnoremap <win-Enter> to_gui_normal
 inoremap <win-Enter> to_gui_normal
 rnoremap <win-Enter> to_gui_normal
+
+" EasyClick (Left Click)
+gnnoremap F easy_click_left
