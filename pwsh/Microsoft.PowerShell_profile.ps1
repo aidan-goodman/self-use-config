@@ -16,6 +16,9 @@ Set-PoshPrompt kali-aidan
 #------------------------------- Import Modules END   -------------------------------
 
 #-------------------------------  Set Hot-keys BEGIN  -------------------------------
+# 设置编辑方式为 emacs
+Set-PSReadLineOption -EditMode Emacs
+
 # 设置预测文本来源为历史记录
 Set-PSReadLineOption -PredictionSource History
 
