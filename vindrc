@@ -39,6 +39,9 @@ set vscroll_pageratio=0.15
 " Horizontal Page Scroll Ratio
 set hscroll_pageratio=0.15
 
+" Jump the mouse cursor by keyboard mapping
+gnnoremap F jump_cursor_with_keybrd_layout
+
 " => map --------------------{{{1
 " GUI Normal Mode
 ennoremap <win-Enter> to_gui_normal
@@ -53,4 +56,4 @@ evnoremap i to_insert
 gvnoremap i to_insert
 
 " EasyClick (Left Click)
-gnnoremap F easy_click_left
+gnnoremap f easy_click_left

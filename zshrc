@@ -269,6 +269,8 @@ fi
 eval "$(lua ~/.zsh/plugins/z.lua/z.lua --init zsh enhanced once echo)"
 # activate plugins
 source ~/.zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+export TERM=xterm-256color
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=240'
 source ~/.zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # use color reminder
