@@ -1,0 +1,78 @@
+{
+  "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+  "blocks": [
+    {
+      "alignment": "left",
+      "segments": [
+        {
+          "style": "plain",
+          "template": "<#506ACF>\n\u256d\u2500[</>{{ if .SSHSession }}\uf817 {{ end }}<#ce4b4b>{{ .UserName }}</><#ce4b4b>`\uf17a`</><#ce4b4b>{{ .HostName }}</><#506ACF>]\u2500</>",
+          "type": "session"
+        },
+        {
+          "foreground": "#000000",
+          "properties": {
+            "max_depth": 3,
+            "style": "agnoster_short"
+          },
+          "style": "powerline",
+          "template": "<#506ACF>[</>{{ .Path }}<#506ACF>]</>",
+          "type": "path"
+        }
+      ],
+      "type": "prompt"
+    },
+    {
+      "alignment": "right",
+      "segments": [
+        {
+          "foreground": "#000000",
+          "properties": {
+            "time_format": "_2:15:04"
+          },
+          "style": "plain",
+          "template": "<#ffffff>[</>{{ .CurrentDate | date .Format }}<#ffffff>]</>",
+          "type": "time"
+        }
+      ],
+      "type": "prompt"
+    },
+    {
+      "alignment": "left",
+      "newline": true,
+      "segments": [
+        {
+          "style": "plain",
+          "template": "<#506ACF>\u2570\u2500</>",
+          "type": "text"
+        },
+        {
+          "foreground": "#5fd7ff",
+          "properties": {
+            "branch_icon": "\ue725 ",
+            "fetch_status": true,
+            "fetch_upstream_icon": true
+          },
+          "style": "plain",
+          "template": "<#5fd7ff>[</>{{ .HEAD }}<#5fd7ff>]-</>",
+          "type": "git"
+        },
+        {
+          "foreground": "#ce4b4b",
+          "foreground_templates": [
+            "{{ if gt .Code 0 }}#ef5350{{ end }}"
+          ],
+          "properties": {
+            "always_enabled": true
+          },
+          "style": "plain",
+          "template": "\ue285ﬀ ",
+          "type": "exit"
+        }
+      ],
+      "type": "prompt"
+    }
+  ],
+  "osc99": true,
+  "version": 2
+}

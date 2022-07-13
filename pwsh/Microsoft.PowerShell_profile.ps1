@@ -3,7 +3,7 @@
 # Import-Module posh-git
 
 # 引入 oh-my-posh
-Import-Module oh-my-posh
+# Import-Module oh-my-posh
 
 # 引入 ps-read-line
 Import-Module PSReadLine
@@ -12,7 +12,8 @@ Import-Module PSReadLine
 Import-Module ZLocation
 
 # 设置 PowerShell 主题
-Set-PoshPrompt kali-aidan
+# Set-PoshPrompt kali-aidan
+oh-my-posh init pwsh --config "C:\Users\Aidan\Documents\PowerShell\Themes\kali-aidan.omp.json" | Invoke-Expression
 #------------------------------- Import Modules END   -------------------------------
 
 #-------------------------------  Set Hot-keys BEGIN  -------------------------------
@@ -42,4 +43,10 @@ Set-PSReadLineKeyHandler -Key DownArrow -Function HistorySearchForward
 
 # 设置 Ctrl+→ 逐个单词补全
 Set-PSReadLineKeyHandler -Chord "Ctrl+RightArrow" -Function ForwardWord
+
+# 设置预测内容颜色
+Set-PSReadLineOption -Colors @{ InlinePrediction = "#666666" }
+
+# Set-PSReadLineOption -BellStyle none
+# Set-PSReadLineOption -HistorySearchCursorMovesToEnd
 #-------------------------------  Set Hot-keys END    -------------------------------
