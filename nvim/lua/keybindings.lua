@@ -54,6 +54,9 @@ map("n", "<C-u>", "9k", opt)
 map("n", "<C-d>", "9j", opt)
 -- ;y 复制内容到 windows
 map("v", ";y", "!/mnt/c/Windows/System32/clip.exe<cr>u", opt)
+-- 使用 Leader v 作为进入块编辑模式唯一入口
+map("n", "<leader>v", "<C-v>", opt)
+-- map("n", "<C-v>", ":Please use <L-v> to enter visual block", opt)
 
 -- insert 模式下，跳到行首行尾
 map("i", "<C-h>", "<ESC>I", opt)

@@ -115,3 +115,8 @@ set history=1000
 set autoread
 
 map ;y : !/mnt/c/Windows/System32/clip.exe<cr>u
+
+" keymap
+let mapleader=" "
+nnoremap <leader>v <C-v>
+" nnoremap <C-v> :Please use <L-v> to enter visual block
