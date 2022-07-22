@@ -7,16 +7,6 @@ vim.o.sidescrolloff = 10
 -- 使用相对行号
 vim.wo.number = true
 vim.wo.relativenumber = true
-pcall(
-  vim.cmd,
-  [[
-    augroup relative_numbser
-        autocmd!
-        autocmd InsertEnter * :set norelativenumber
-        autocmd InsertLeave * :set relativenumber
-    augroup END
-  ]]
-)
 -- 高亮所在行
 vim.wo.cursorline = true
 -- 显示左侧图标指示列
@@ -72,7 +62,6 @@ vim.o.splitright = true
 -- 自动补全不自动选中
 vim.g.completeopt = "menu,menuone,noselect,noinsert"
 -- 样式
--- vim.o.background = "dark"
 vim.o.termguicolors = true
 vim.opt.termguicolors = true
 -- 不可见字符的显示，这里只把空格显示为一个点
@@ -88,5 +77,5 @@ vim.o.pumheight = 10
 vim.o.showtabline = 2
 -- 使用增强状态栏插件后不再需要 vim 的模式提示
 vim.o.showmode = false
--- --------- custom
-vim.g.tokyonight_style = 'day'
+-- 配置剪切板
+vim.opt.clipboard = "unnamedplus"

@@ -89,15 +89,15 @@ _G.packer_plugins = {
     path = "/home/aidan/.local/share/nvim/site/pack/packer/start/lualine.nvim",
     url = "https://hub.fastgit.xyz/nvim-lualine/lualine.nvim"
   },
-  ["nightfox.nvim"] = {
-    loaded = true,
-    path = "/home/aidan/.local/share/nvim/site/pack/packer/start/nightfox.nvim",
-    url = "https://hub.fastgit.xyz/EdenEast/nightfox.nvim"
-  },
   ["nvim-tree.lua"] = {
     loaded = true,
     path = "/home/aidan/.local/share/nvim/site/pack/packer/start/nvim-tree.lua",
     url = "https://hub.fastgit.xyz/kyazdani42/nvim-tree.lua"
+  },
+  ["nvim-treesitter"] = {
+    loaded = true,
+    path = "/home/aidan/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
+    url = "https://hub.fastgit.xyz/nvim-treesitter/nvim-treesitter"
   },
   ["nvim-web-devicons"] = {
     loaded = true,

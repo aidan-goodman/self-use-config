@@ -1,3 +1,12 @@
+-- Modes
+--   normal_mode = "n",
+--   insert_mode = "i",
+--   visual_mode = "v",
+--   visual_block_mode = "x",
+--   term_mode = "t",
+--   command_mode = "c",
+
+-- 使用空格作为 leaderKey
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
