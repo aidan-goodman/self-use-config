@@ -6,6 +6,8 @@ require('plugins')
 require('keybindings')
 -- 主题设置 （新增）
 require('colorscheme')
+-- 命令配置
+require("autocmds")
 -- 插件配置
 require("plugin-config.nvim-tree")
 require("plugin-config.bufferline")
@@ -13,3 +15,4 @@ require("plugin-config.lualine")
 require("plugin-config.telescope")
 require("plugin-config.dashboard")
 require("plugin-config.project")
+require("plugin-config.nvim-treesitter")

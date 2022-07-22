@@ -6,8 +6,7 @@ packer.startup({
     --------------------- colorschemes --------------------
     -- tokyonight
     use("folke/tokyonight.nvim")
-    -- nightfox
-    use("EdenEast/nightfox.nvim")
+    ------------------------ tools ------------------------
     -- nvim-tree
     use({"kyazdani42/nvim-tree.lua", requires = "kyazdani42/nvim-web-devicons"})
     -- bufferline
@@ -15,6 +14,7 @@ packer.startup({
       -- lualine
     use({"nvim-lualine/lualine.nvim", requires = {"kyazdani42/nvim-web-devicons"}})
     use("arkav/lualine-lsp-progress")
+    ----------------- open file or project ----------------
     -- telescope
     use {'nvim-telescope/telescope.nvim', requires = {"nvim-lua/plenary.nvim"}}
     -- telescope extensions
@@ -24,6 +24,9 @@ packer.startup({
     use({"glepnir/dashboard-nvim", commit = "a36b3232c98616149784f2ca2654e77caea7a522"})
     -- project
     use("ahmedkhalf/project.nvim")
+    ---------------------- edit code----- -----------------
+    -- treesitter
+    use({ "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" })
   end,
   config = {
     -- 并发数限制
