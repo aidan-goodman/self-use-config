@@ -258,6 +258,7 @@ alias l='ls -CF'
 alias tailf='tail -f'
 alias mycli-local='mycli -u root -h localhost -p "Jx34&"'
 alias iredis='/home/aidan/local/iredis/iredis --rainbow --decode=utf-8'
+alias es-start='/usr/share/elasticsearch/bin/elasticsearch'
 
 # enable command-not-found if installed
 if [ -f /etc/zsh_command_not_found ]; then
@@ -280,7 +281,7 @@ autoload -U colors && colors
 RPROMPT="%*"
 
 # config java ENV
-export JAVA_HOME=/usr/lib/jvm/default-java
+export JAVA_HOME=/usr/lib/jvm/java-1.17.0-openjdk-amd64
 export MAVEN_HOME=/usr/share/maven
 
 # config go ENV
