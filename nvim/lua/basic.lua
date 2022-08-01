@@ -13,17 +13,17 @@ vim.wo.cursorline = true
 vim.wo.signcolumn = "yes"
 -- 右侧参考线，超过表示代码太长了，考虑换行
 vim.wo.colorcolumn = "120"
--- 缩进2个空格等于一个Tab
-vim.o.tabstop = 2
-vim.bo.tabstop = 2
-vim.o.softtabstop = 2
+-- 缩进 4 个空格等于一个 Tab
+vim.o.tabstop = 4
+vim.bo.tabstop = 4
+vim.o.softtabstop = 4
 vim.o.shiftround = true
 -- >> << 时移动长度
-vim.o.shiftwidth = 2
-vim.bo.shiftwidth = 2
+vim.o.shiftwidth = 4
+vim.bo.shiftwidth = 4
 -- 空格替代tab
-vim.o.expandtab = true
-vim.bo.expandtab = true
+vim.o.expandtab = false
+vim.bo.expandtab = false
 -- 新行对齐当前行
 vim.o.autoindent = true
 vim.bo.autoindent = true
@@ -35,7 +35,7 @@ vim.o.smartcase = true
 vim.o.hlsearch = false
 -- 边输入边搜索
 vim.o.incsearch = true
--- 命令行高为2，提供足够的显示空间
+-- 命令行高为 2，提供足够的显示空间
 vim.o.cmdheight = 2
 -- 当文件被外部程序修改时，自动加载
 vim.o.autoread = true
@@ -66,7 +66,7 @@ vim.o.termguicolors = true
 vim.opt.termguicolors = true
 -- 不可见字符的显示，这里只把空格显示为一个点
 vim.o.list = true
-vim.o.listchars = "tab:*·,space:·"
+vim.o.listchars = "tab:↬ ,space:·"
 -- 补全增强
 vim.o.wildmenu = true
 -- Dont' pass messages to |ins-completin menu|

@@ -259,6 +259,7 @@ alias tailf='tail -f'
 alias mycli-local='mycli -u root -h localhost -p "Jx34&"'
 alias iredis='/home/aidan/local/iredis/iredis --rainbow --decode=utf-8'
 alias es-start='/usr/share/elasticsearch/bin/elasticsearch'
+alias es-stop='sudo sh /home/aidan/local/script/es-stop.sh'
 
 # enable command-not-found if installed
 if [ -f /etc/zsh_command_not_found ]; then

@@ -28,10 +28,10 @@
         {
           "foreground": "#000000",
           "properties": {
-            "time_format": "_2:15:04"
+            "time_format": "15:04:05"
           },
           "style": "plain",
-          "template": "<#ffffff>[</>{{ .CurrentDate | date .Format }}<#ffffff>]</>",
+          "template": "{{ .CurrentDate | date .Format }}",
           "type": "time"
         }
       ],
