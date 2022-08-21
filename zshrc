@@ -257,7 +257,7 @@ alias l='ls -CF'
 # custom aliases
 alias tailf='tail -f'
 alias mycli-local='mycli -u root -h localhost -p "Jx34&"'
-alias iredis='/home/aidan/local/iredis/iredis --rainbow --decode=utf-8'
+alias iredis='iredis --rainbow --decode=utf-8'
 alias es-start='/usr/share/elasticsearch/bin/elasticsearch'
 alias es-stop='sudo sh /home/aidan/local/script/es-stop.sh'
 
@@ -281,6 +281,8 @@ autoload -U colors && colors
 # Show current timestamp
 RPROMPT="%*"
 
+# global ENV
+export LOCAL=/home/aidan/.local
 # config java ENV
 export JAVA_HOME=/usr/lib/jvm/java-1.17.0-openjdk-amd64
 export MAVEN_HOME=/usr/share/maven
@@ -292,7 +294,7 @@ export GO111MODULE=on
 export GOPROXY=https://goproxy.cn,direct
 
 # Merge PATH
-export PATH=$PATH:$GOROOT/bin:$GOPATH/bin:$JAVA_HOME/bin:$MAVEN_HOME/bin
+export PATH=$PATH:$LOCAL/bin:$GOROOT/bin:$GOPATH/bin:$JAVA_HOME/bin:$MAVEN_HOME/bin
 
 # boot sh
 echo "==========[start]=========="
