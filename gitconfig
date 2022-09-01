@@ -1,0 +1,8 @@
+[user]
+	name = Aidan
+	email = junxiao.song@foxmail.com
+[url "git@code.aliyun.com:"]
+	insteadOf = https://code.aliyun.com/
+[core]
+	autocrlf = input
+	editor = vim
