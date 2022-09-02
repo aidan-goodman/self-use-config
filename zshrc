@@ -93,7 +93,7 @@ fi
 
 configure_prompt() {
     # prompt_symbol=㉿
-    prompt_symbol=\'\'
+    prompt_symbol=\ \ 
     prompt_exit=ﬀ
     # Skull emoji for root terminal
     #[ "$EUID" -eq 0 ] && prompt_symbol=💀

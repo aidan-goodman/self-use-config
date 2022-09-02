@@ -6,7 +6,7 @@
       "segments": [
         {
           "style": "plain",
-          "template": "<#506ACF>\n\u256d\u2500(</>{{ if .SSHSession }}\uf817 {{ end }}<#ce4b4b>{{ .UserName }}</><#ce4b4b>`\uf17a`</><#ce4b4b>{{ .HostName }}</><#506ACF>)\u2500</>",
+          "template": "<#506ACF>\n\u256d\u2500(</>{{ if .SSHSession }}\uf817 {{ end }}<#ce4b4b>{{ .UserName }}</><#ce4b4b> \uf17a </><#ce4b4b>{{ .HostName }}</><#506ACF>)\u2500</>",
           "type": "session"
         },
         {
