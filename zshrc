@@ -256,6 +256,7 @@ alias l='ls -CF'
 # ==========[custom]==========
 # custom aliases
 alias tailf='tail -f'
+alias cp='cp -i'
 alias mycli-local='mycli -u root -h localhost -p "Jx34&"'
 alias iredis='iredis --rainbow --decode=utf-8'
 alias es-start='/usr/share/elasticsearch/bin/elasticsearch'
@@ -268,7 +269,7 @@ fi
 
 # custom setting
 # activate z.lua
-eval "$(lua ~/.zsh/plugins/z.lua/z.lua --init zsh enhanced once echo)"
+eval "$(lua ~/.zsh/plugins/z.lua/z.lua --init zsh once enhanced)"
 # activate plugins
 source ~/.zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 export TERM=xterm-256color
