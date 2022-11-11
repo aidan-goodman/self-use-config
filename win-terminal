@@ -52,12 +52,15 @@
     {
         "defaults": 
         {
+            "bellStyle": "window",
             "colorScheme": "AtomOneLight",
             "cursorShape": "filledBox",
             "font": 
             {
-                "face": "FuraCode Nerd Font"
-            }
+                "face": "FuraCode Nerd Font",
+                "size": 11
+            },
+            "historySize": 999
         },
         "list": 
         [

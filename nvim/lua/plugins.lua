@@ -13,10 +13,10 @@ packer.init({
 	git = {
 		-- 减少超时时间
 		clone_timeout = 288,
-		default_url_format = "git@github.com:%s"
+		-- default_url_format = "git@github.com:%s"
 		-- default_url_format = "https://hub.fastgit.xyz/%s",
 		-- default_url_format = "https://mirror.ghproxy.com/https://github.com/%s",
-		-- default_url_format = "https://gitcode.net/mirrors/%s",
+		default_url_format = "https://gitcode.net/mirrors/%s",
 		-- default_url_format = "https://gitclone.com/github.com/%s",
 	},
 })

@@ -9,23 +9,26 @@ vim.api.nvim_command('packadd packer.nvim')
 
 local no_errors, error_msg = pcall(function()
 
-  local time
-  local profile_info
-  local should_profile = false
-  if should_profile then
-    local hrtime = vim.loop.hrtime
-    profile_info = {}
-    time = function(chunk, start)
-      if start then
-        profile_info[chunk] = hrtime()
-      else
-        profile_info[chunk] = (hrtime() - profile_info[chunk]) / 1e6
-      end
+_G._packer = _G._packer or {}
+_G._packer.inside_compile = true
+
+local time
+local profile_info
+local should_profile = false
+if should_profile then
+  local hrtime = vim.loop.hrtime
+  profile_info = {}
+  time = function(chunk, start)
+    if start then
+      profile_info[chunk] = hrtime()
+    else
+      profile_info[chunk] = (hrtime() - profile_info[chunk]) / 1e6
     end
-  else
-    time = function(chunk, start) end
   end
-  
+else
+  time = function(chunk, start) end
+end
+
 local function save_profiles(threshold)
   local sorted_times = {}
   for chunk_name, time_taken in pairs(profile_info) do
@@ -38,8 +41,10 @@ local function save_profiles(threshold)
       results[i] = elem[1] .. ' took ' .. elem[2] .. 'ms'
     end
   end
+  if threshold then
+    table.insert(results, '(Only showing plugins that took longer than ' .. threshold .. ' ms ' .. 'to load)')
+  end
 
-  _G._packer = _G._packer or {}
   _G._packer.profile_output = results
 end
 
@@ -72,76 +77,83 @@ _G.packer_plugins = {
   ["bufferline.nvim"] = {
     loaded = true,
     path = "/home/aidan/.local/share/nvim/site/pack/packer/start/bufferline.nvim",
-    url = "https://hub.fastgit.xyz/akinsho/bufferline.nvim"
+    url = "https://github.com/akinsho/bufferline.nvim"
   },
   ["dashboard-nvim"] = {
     loaded = true,
     path = "/home/aidan/.local/share/nvim/site/pack/packer/start/dashboard-nvim",
-    url = "https://hub.fastgit.xyz/glepnir/dashboard-nvim"
+    url = "https://github.com/glepnir/dashboard-nvim"
   },
   ["lualine-lsp-progress"] = {
     loaded = true,
     path = "/home/aidan/.local/share/nvim/site/pack/packer/start/lualine-lsp-progress",
-    url = "https://hub.fastgit.xyz/arkav/lualine-lsp-progress"
+    url = "https://github.com/arkav/lualine-lsp-progress"
   },
   ["lualine.nvim"] = {
     loaded = true,
     path = "/home/aidan/.local/share/nvim/site/pack/packer/start/lualine.nvim",
-    url = "https://hub.fastgit.xyz/nvim-lualine/lualine.nvim"
+    url = "https://github.com/nvim-lualine/lualine.nvim"
   },
   ["nvim-tree.lua"] = {
     loaded = true,
     path = "/home/aidan/.local/share/nvim/site/pack/packer/start/nvim-tree.lua",
-    url = "https://hub.fastgit.xyz/kyazdani42/nvim-tree.lua"
+    url = "https://github.com/kyazdani42/nvim-tree.lua"
   },
   ["nvim-treesitter"] = {
     loaded = true,
     path = "/home/aidan/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
-    url = "https://hub.fastgit.xyz/nvim-treesitter/nvim-treesitter"
+    url = "https://github.com/nvim-treesitter/nvim-treesitter"
   },
   ["nvim-web-devicons"] = {
     loaded = true,
     path = "/home/aidan/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
-    url = "https://hub.fastgit.xyz/kyazdani42/nvim-web-devicons"
+    url = "https://github.com/kyazdani42/nvim-web-devicons"
   },
   ["packer.nvim"] = {
     loaded = true,
     path = "/home/aidan/.local/share/nvim/site/pack/packer/start/packer.nvim",
-    url = "https://hub.fastgit.xyz/wbthomason/packer.nvim"
+    url = "https://github.com/wbthomason/packer.nvim"
   },
   ["plenary.nvim"] = {
     loaded = true,
     path = "/home/aidan/.local/share/nvim/site/pack/packer/start/plenary.nvim",
-    url = "https://hub.fastgit.xyz/nvim-lua/plenary.nvim"
+    url = "https://github.com/nvim-lua/plenary.nvim"
   },
   ["project.nvim"] = {
     loaded = true,
     path = "/home/aidan/.local/share/nvim/site/pack/packer/start/project.nvim",
-    url = "https://hub.fastgit.xyz/ahmedkhalf/project.nvim"
+    url = "https://github.com/ahmedkhalf/project.nvim"
   },
   ["telescope-env.nvim"] = {
     loaded = true,
     path = "/home/aidan/.local/share/nvim/site/pack/packer/start/telescope-env.nvim",
-    url = "https://hub.fastgit.xyz/LinArcX/telescope-env.nvim"
+    url = "https://github.com/LinArcX/telescope-env.nvim"
   },
   ["telescope.nvim"] = {
     loaded = true,
     path = "/home/aidan/.local/share/nvim/site/pack/packer/start/telescope.nvim",
-    url = "https://hub.fastgit.xyz/nvim-telescope/telescope.nvim"
+    url = "https://github.com/nvim-telescope/telescope.nvim"
   },
   ["tokyonight.nvim"] = {
     loaded = true,
     path = "/home/aidan/.local/share/nvim/site/pack/packer/start/tokyonight.nvim",
-    url = "https://hub.fastgit.xyz/folke/tokyonight.nvim"
+    url = "https://github.com/folke/tokyonight.nvim"
   },
   ["vim-bbye"] = {
     loaded = true,
     path = "/home/aidan/.local/share/nvim/site/pack/packer/start/vim-bbye",
-    url = "https://hub.fastgit.xyz/moll/vim-bbye"
+    url = "https://github.com/moll/vim-bbye"
   }
 }
 
 time([[Defining packer_plugins]], false)
+
+_G._packer.inside_compile = false
+if _G._packer.needs_bufread == true then
+  vim.cmd("doautocmd BufRead")
+end
+_G._packer.needs_bufread = false
+
 if should_profile then save_profiles() end
 
 end)

@@ -297,18 +297,8 @@ export GOPROXY=https://goproxy.cn,direct
 # Merge PATH
 export PATH=$PATH:$LOCAL/bin:$GOROOT/bin:$GOPATH/bin:$JAVA_HOME/bin:$MAVEN_HOME/bin
 
-# wsl2 proxy configuration
-export windows_host=`cat /etc/resolv.conf|grep nameserver|awk '{print $2}'`
-export ALL_PROXY=socks5://$windows_host:14332
-export HTTP_PROXY=$ALL_PROXY
-export http_proxy=$ALL_PROXY
-export HTTPS_PROXY=$ALL_PROXY
-export https_proxy=$ALL_PROXY
-
-# git in wsl2 proxy
-if [ "`git config --global --get proxy.https`" != "socks5://$windows_host:14332" ]; then
-	git config --global proxy.https socks5://$windows_host:14332
-fi
+# clear git global config when system start
+git config --global --unset proxy.https
 
 # boot sh
 echo "==========[start]=========="

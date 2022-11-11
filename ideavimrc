@@ -12,7 +12,8 @@ if has("clipboard")
 endif
 
 """ use line numbers ------------------
-set number relativenumber
+set number
+set relativenumber
 set scrolloff=10
 
 """ show more info ------------------
