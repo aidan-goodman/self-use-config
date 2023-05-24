@@ -257,6 +257,7 @@ alias l='ls -CF'
 # custom aliases
 alias tailf='tail -f'
 alias cp='cp -i'
+alias python='python3'
 alias mycli-local='mycli -u root -h localhost -p "Jx34&"'
 alias iredis='iredis --rainbow --decode=utf-8'
 alias es-start='/usr/share/elasticsearch/bin/elasticsearch'
@@ -303,4 +304,8 @@ git config --global --unset proxy.https
 # boot sh
 echo "==========[start]=========="
 bash /etc/init.d/host-config
+host_ip=$(cat /etc/resolv.conf | grep "nameserver" | cut -f 2 -d " ")
+export https_proxy="http://$host_ip:7890"
+export http_proxy="http://$host_ip:7890"
+echo "proxy_address: $http_proxy"
 echo "==========[ end ]=========="
