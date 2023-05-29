@@ -1,8 +1,10 @@
 [user]
-	name = Aidan
+	name = aidan
 	email = junxiao.song@foxmail.com
 [url "git@code.aliyun.com:"]
 	insteadOf = https://code.aliyun.com/
+[url "git@github.com:"]
+	insteadOf = https://github.com/
 [core]
 	autocrlf = input
 	editor = vim
