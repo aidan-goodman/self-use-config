@@ -58,9 +58,8 @@
             "font": 
             {
                 "face": "FuraCode Nerd Font",
-                "size": 11
-            },
-            "historySize": 999
+                "size": 11.0
+            }
         },
         "list": 
         [
@@ -336,5 +335,7 @@
             "white": "#C0C0C0",
             "yellow": "#808000"
         }
-    ]
+    ],
+    "theme": "system",
+    "themes": []
 }

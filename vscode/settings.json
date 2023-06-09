@@ -147,7 +147,6 @@
   "picgo.picBed.qiniu.bucket": "asset-files",
   "picgo.picBed.qiniu.path": "images/",
   "picgo.picBed.qiniu.url": "https://assets.aidanblog.top",
-  "picgo.dataPath": "C:\\Users\\Aidan\\.picgo\\config.json",
   "picgo.customUploadName": "${mdFileName}-${dateTime}${extName}",
   // format
   "[jsonc]": {
@@ -156,6 +155,9 @@
   // ====================== wsl config ======================
   // backup extensions
   // code --list-extensions > extensions.json && sed -i 's/.*/\t\t\"&\",/' extensions.json && sed -i '$ s/.$//' extensions.json &&sed -i '1i {\n\t\"recommendations\": [' extensions.json && sed -i '$a \\t]\n}' extensions.json
+  "security.allowedUNCHosts": [
+    "wsl.localhost"
+  ],
   // git and plugin config
   "git.confirmSync": false,
   "git.ignoreMissingGitWarning": true,

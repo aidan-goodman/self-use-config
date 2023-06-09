@@ -112,6 +112,7 @@ endif
 set nobackup
 set noswapfile
 set undofile
+set nowritebackup
 set noerrorbells
 set visualbell
 set history=1000
