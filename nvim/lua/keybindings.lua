@@ -1,4 +1,4 @@
--- Modes
+-- Mode
 --   normal_mode = "n",
 --   insert_mode = "i",
 --   visual_mode = "v",
@@ -46,13 +46,7 @@ map("n", "<C-Up>", ":resize -2<CR>", opt)
 map("n", "s=", "<C-w>=", opt)
 
 -- Terminal相关
-map("n", "<leader>t", ":sp | terminal<CR>", opt)
-map("n", "<leader>vt", ":vsp | terminal<CR>", opt)
-map("t", "<Esc>", "<C-\\><C-n>", opt)
-map("t", "<A-h>", [[ <C-\><C-N><C-w>h ]], opt)
-map("t", "<A-j>", [[ <C-\><C-N><C-w>j ]], opt)
-map("t", "<A-k>", [[ <C-\><C-N><C-w>k ]], opt)
-map("t", "<A-l>", [[ <C-\><C-N><C-w>l ]], opt)
+map("n", "<leader>t", ":FloatermNew<CR>", opt)
 
 -- Visual 相关
 -- 上下滚动浏览

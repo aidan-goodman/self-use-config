@@ -55,6 +55,8 @@ packer.startup({
 			requires = { "kyazdani42/nvim-web-devicons" },
 		})
 		use("arkav/lualine-lsp-progress")
+		-- floa term
+		use("voldikss/vim-floaterm")
 		----------------- open file or project ----------------
 		-- telescope
 		use({

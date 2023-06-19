@@ -148,6 +148,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/aidan/.local/share/nvim/site/pack/packer/start/vim-bbye",
     url = "https://github.com/moll/vim-bbye"
+  },
+  ["vim-floaterm"] = {
+    loaded = true,
+    path = "/home/aidan/.local/share/nvim/site/pack/packer/start/vim-floaterm",
+    url = "https://github.com/voldikss/vim-floaterm"
   }
 }
 
