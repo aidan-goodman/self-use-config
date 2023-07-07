@@ -6,8 +6,10 @@
 		"eamodio.gitlens",
 		"ecmel.vscode-spring-boot",
 		"esbenp.prettier-vscode",
+		"gera2ld.markmap-vscode",
 		"golang.go",
 		"leemove.node-modules-cleaner",
+		"mervin.markdown-formatter",
 		"ms-azuretools.vscode-docker",
 		"ms-python.python",
 		"ms-python.vscode-pylance",
@@ -16,6 +18,8 @@
 		"redhat.java",
 		"redhat.vscode-xml",
 		"redjue.git-commit-plugin",
+		"shd101wyy.markdown-preview-enhanced",
+		"Spades.vs-picgo",
 		"vmware.vscode-boot-dev-pack",
 		"vmware.vscode-spring-boot",
 		"vscjava.vscode-java-debug",
@@ -26,6 +30,8 @@
 		"vscjava.vscode-maven",
 		"vscjava.vscode-spring-boot-dashboard",
 		"vscjava.vscode-spring-initializr",
-		"xdebug.php-debug"
+		"xdebug.php-debug",
+		"xlthu.Pangu-Markdown",
+		"yzhang.markdown-all-in-one"
 	]
 }
