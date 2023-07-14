@@ -256,6 +256,7 @@ alias l='ls -CF'
 # ==========[custom]==========
 # custom aliases
 alias cp='cp -i'
+alias vim='nvim'
 alias tailf='tail -f'
 alias python='python3'
 alias set-proxy='. ~/local/script/set-proxy.sh'
