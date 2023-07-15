@@ -258,7 +258,6 @@ alias l='ls -CF'
 alias cp='cp -i'
 alias vim='nvim'
 alias tailf='tail -f'
-alias python='python3'
 alias set-proxy='. ~/local/script/set-proxy.sh'
 alias mycli-local='mycli -u root -h localhost -p "Jx34&"'
 alias iredis='iredis --rainbow --decode=utf-8'
@@ -293,7 +292,7 @@ export MAVEN_HOME=/usr/share/maven
 
 # config go ENV
 export GOROOT=/usr/lib/go
-export GOPATH=/home/aidan/workspace/gopath
+export GOPATH=/home/aidan/local/gopath
 export GO111MODULE=on
 export GOPROXY=https://goproxy.cn,direct
 

@@ -34,49 +34,88 @@ end
 packer.startup({
 	function(use)
 		-- Packer 可以升级自己
-		use("wbthomason/packer.nvim")
+		use({
+			"wbthomason/packer.nvim",
+			commit = "4dedd3b"
+		})
 		--------------------- colorschemes --------------------
 		-- tokyonight
-		use("folke/tokyonight.nvim")
+		use({
+			"folke/tokyonight.nvim",
+			commit = "8223c97"
+		})
 		------------------------ tools ------------------------
 		-- nvim-tree
 		use({
 			"kyazdani42/nvim-tree.lua",
-			requires = "kyazdani42/nvim-web-devicons",
+			commit = "aefa66c",
+			requires = {
+				"kyazdani42/nvim-web-devicons",
+				commit = "53dc7b3"
+			}
 		})
 		-- bufferline
 		use({
 			"akinsho/bufferline.nvim",
-			requires = { "kyazdani42/nvim-web-devicons", "moll/vim-bbye" },
+			commit = "29d5789",
+			requires = {
+				"moll/vim-bbye",
+				commit = "25ef93a"
+			}
 		})
 		-- lualine
 		use({
 			"nvim-lualine/lualine.nvim",
-			requires = { "kyazdani42/nvim-web-devicons" },
+			commit = "a4e4517"
 		})
-		use("arkav/lualine-lsp-progress")
+		use({
+			"arkav/lualine-lsp-progress",
+			commit = "56842d0"
+		})
 		-- floa term
-		use("voldikss/vim-floaterm")
+		use({
+			"voldikss/vim-floaterm",
+			commit = "bcaeabf"
+		})
 		----------------- open file or project ----------------
 		-- telescope
 		use({
 			"nvim-telescope/telescope.nvim",
-			requires = { "nvim-lua/plenary.nvim" },
+			commit = "39b12d8",
+			requires = {
+				"nvim-lua/plenary.nvim",
+				commit = "0a90736"
+			},
 		})
 		-- telescope extensions
-		use("LinArcX/telescope-env.nvim")
-		use("nvim-telescope/telescope-ui-select.nvim")
+		use({
+			"LinArcX/telescope-env.nvim",
+			commit = "5c04e1d"
+		})
+		use({
+			"nvim-telescope/telescope-ui-select.nvim",
+			commit = "62ea5e5"
+		})
 		-- dashboard-nvim
-		use("glepnir/dashboard-nvim")
+		use({
+			"glepnir/dashboard-nvim",
+			commit = "88a6077"
+		})
 		-- project
-		use("ahmedkhalf/project.nvim")
+		use({
+			"ahmedkhalf/project.nvim",
+			commit = "612443b"
+		})
 		---------------------- edit code----- -----------------
 		-- treesitter
 		use({
 			"nvim-treesitter/nvim-treesitter",
-			run = ":TSUpdate",
+			commit = "b30a830"
 		})
-		use("p00f/nvim-ts-rainbow")
+		use({
+			"p00f/nvim-ts-rainbow",
+			commit = "190f8c8"
+		})
 		if paccker_bootstrap then
 			packer.sync()
 		end
