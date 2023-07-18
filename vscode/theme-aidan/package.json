@@ -1,0 +1,24 @@
+{
+	"name": "theme-aidan",
+	"displayName": "%displayName%",
+	"description": "%description%",
+	"categories": [
+		"Themes"
+	],
+	"version": "1.0.0",
+	"publisher": "Aidan",
+	"license": "MIT",
+	"engines": {
+		"vscode": "*"
+	},
+	"contributes": {
+		"themes": [
+			{
+				"id": "Custom Light by Aidan",
+				"label": "%lightCustomThemeLabel%",
+				"uiTheme": "vs",
+				"path": "./themes/light_aidan.json"
+			}
+		]
+	}
+}
