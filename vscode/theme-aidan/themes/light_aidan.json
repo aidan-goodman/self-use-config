@@ -139,7 +139,7 @@
 				"storage.type.haskell"
 			],
 			"settings": {
-				"foreground": "#23575C"
+				"foreground": "#062d30"
 			}
 		},
 		{
@@ -155,7 +155,7 @@
 				"support.function.builtin"
 			],
 			"settings": {
-				"foreground": "#804FB8"
+				"foreground": "#804fb8"
 			}
 		},
 		{
@@ -163,7 +163,7 @@
 				"variable.parameter"
 			],
 			"settings": {
-				"foreground": "#057CB0"
+				"foreground": "#057cb0"
 			}
 		},
 		{
@@ -624,6 +624,19 @@
 			],
 			"settings": {
 				"foreground": "#000000"
+			}
+		},
+		{
+			"scope": [
+				"support.type.primitive",
+				"meta.type.annotation",
+				"meta.var-single-variable.expr",
+				"meta.var.expr",
+				"meta.block",
+				"meta.method.declaration"
+			],
+			"settings": {
+				"foreground": "#6c36a9"
 			}
 		}
 	]

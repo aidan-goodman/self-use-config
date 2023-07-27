@@ -1,14 +1,12 @@
 {
-	// global
-	"security.workspace.trust.untrustedFiles": "open",
+	"window.commandCenter": false,
 	"explorer.confirmDelete": false,
 	"explorer.confirmDragAndDrop": false,
-	"workbench.iconTheme": "vscode-icons",
-	"workbench.colorTheme": "Github Light Theme",
-	"workbench.startupEditor": "newUntitledFile",
 	"workbench.statusBar.visible": true,
 	"workbench.activityBar.visible": true,
-	"workbench.editor.wrapTabs": true,
+	"workbench.iconTheme": "vscode-icons",
+	"workbench.startupEditor": "newUntitledFile",
+	"workbench.colorTheme": "Custom Light by Aidan",
 	"workbench.colorCustomizations": {
 		"editorBracketHighlight.foreground1": "#006834",
 		"editorBracketHighlight.foreground2": "#da70d6",
@@ -20,21 +18,23 @@
 	},
 	// editor config
 	"editor.fontSize": 16,
-	"editor.lineHeight": 20,
-	"editor.fontFamily": "Consolas, '微软雅黑', monospace",
+	"editor.formatOnSave": true,
+	"editor.insertSpaces": false,
+	"editor.minimap.enabled": false,
 	"editor.renderWhitespace": "all",
 	"editor.detectIndentation": false,
-	"editor.insertSpaces": false,
-	"editor.suggest.snippetsPreventQuickSuggestions": false,
 	"editor.suggestSelection": "first",
 	"editor.cursorSurroundingLines": 10,
-	"editor.minimap.enabled": false,
-	"editor.unicodeHighlight.nonBasicASCII": false,
 	"editor.guides.bracketPairs": "active",
+	"editor.unicodeHighlight.nonBasicASCII": false,
 	"editor.bracketPairColorization.enabled": true,
+	"editor.suggest.snippetsPreventQuickSuggestions": false,
+	"editor.fontFamily": "Consolas, '微软雅黑', monospace",
 	"editor.rulers": [
 		120
 	],
+	// security config
+	"security.workspace.trust.untrustedFiles": "open",
 	// terminal config
 	"terminal.integrated.fontFamily": "FuraCode Nerd Font Mono",
 	"terminal.external.windowsExec": "C:\\Program Files\\PowerShell\\7\\pwsh.exe",
@@ -43,17 +43,17 @@
 		"webdev": "linux"
 	},
 	// vim emulator
-	"vim.history": 1000,
 	"vim.scroll": 10,
+	"vim.history": 1000,
 	"vim.showcmd": true,
-	"vim.showmodename": true,
 	"vim.incsearch": true,
 	"vim.ignorecase": true,
 	"vim.smartcase": true,
-	"vim.smartRelativeLine": true,
 	"vim.easymotion": true,
-	"vim.useSystemClipboard": true,
+	"vim.showmodename": true,
 	"vim.useCtrlKeys": false,
+	"vim.smartRelativeLine": true,
+	"vim.useSystemClipboard": true,
 	"vim.leader": "<space>",
 	"vim.normalModeKeyBindingsNonRecursive": [
 		{
@@ -96,7 +96,6 @@
 	"markdown.preview.fontSize": 18,
 	"markdown.preview.lineHeight": 1.8,
 	"markdown-preview-enhanced.codeBlockTheme": "atom-light.css",
-	"markdown-preview-enhanced.previewTheme": "github-light.css",
 	"markdown-preview-enhanced.enableScriptExecution": true,
 	"markdown.preview.doubleClickToSwitchToEditor": false,
 	"markdown-preview-enhanced.enableExtendedTableSyntax": true,
@@ -131,6 +130,7 @@
 		"editor.defaultFormatter": "mervin.markdown-formatter"
 	},
 	"go.toolsManagement.autoUpdate": true,
+	"python.languageServer": "Pylance",
 	"python.formatting.provider": "none",
 	"[python]": {
 		"editor.defaultFormatter": "ms-python.black-formatter"
