@@ -90,7 +90,7 @@
             {
                 "guid": "{58ad8b0c-3ef8-5f4d-bc6f-13e4c00f2530}",
                 "hidden": false,
-                "icon": "https://assets.aidanblog.top/icon/debian_linux.png",
+                "icon": "http://assets.aidanblog.top/icon/debian_linux.png",
                 "name": "debian",
                 "source": "Windows.Terminal.Wsl"
             },
@@ -104,7 +104,7 @@
                 "commandline": "ssh -p 2222 songjunxiao@fort.ishumei.com -i C:\\Data_Files\\Config_Files\\shumei_sshkey\\songjunxiao-jumpserver.pem",
                 "guid": "{ccbec4c1-7ab6-4b63-a198-84d36c0a294e}",
                 "hidden": false,
-                "icon": "https://assets.aidanblog.top/icon/CentOS.png",
+                "icon": "http://assets.aidanblog.top/icon/CentOS.png",
                 "name": "shumei"
             }
         ]

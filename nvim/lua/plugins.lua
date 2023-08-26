@@ -57,10 +57,10 @@ packer.startup({
 		-- bufferline
 		use({
 			"akinsho/bufferline.nvim",
-			commit = "29d5789",
+			commit = "d24378e",
 			requires = {
 				"moll/vim-bbye",
-				commit = "25ef93a"
+				commit = "903f5eb"
 			}
 		})
 		-- lualine
@@ -81,10 +81,10 @@ packer.startup({
 		-- telescope
 		use({
 			"nvim-telescope/telescope.nvim",
-			commit = "39b12d8",
+			commit = "776b509",
 			requires = {
 				"nvim-lua/plenary.nvim",
-				commit = "0a90736"
+				commit = "6aeb98d"
 			},
 		})
 		-- telescope extensions
@@ -122,9 +122,9 @@ packer.startup({
 	end,
 	config = {
 		-- 锁定插件版本在snapshots目录
-		snapshot_path = require("packer.util").join_paths(vim.fn.stdpath("config"), "snapshots"),
+		-- snapshot_path = require("packer.util").join_paths(vim.fn.stdpath("config"), "snapshots"),
 		-- 这里锁定插件版本在v1，不会继续更新插件
-		snapshot = "v-1",
+		-- snapshot = "v-1",
 
 		-- 最大并发数
 		max_jobs = 16,
