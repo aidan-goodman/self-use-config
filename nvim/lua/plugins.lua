@@ -48,16 +48,16 @@ packer.startup({
 		-- nvim-tree
 		use({
 			"kyazdani42/nvim-tree.lua",
-			commit = "aefa66c",
+			commit = "949913f",
 			requires = {
 				"kyazdani42/nvim-web-devicons",
-				commit = "53dc7b3"
+				commit = "b34362b"
 			}
 		})
 		-- bufferline
 		use({
 			"akinsho/bufferline.nvim",
-			commit = "d24378e",
+			commit = "f4af7e5",
 			requires = {
 				"moll/vim-bbye",
 				commit = "903f5eb"
@@ -110,7 +110,7 @@ packer.startup({
 		-- treesitter
 		use({
 			"nvim-treesitter/nvim-treesitter",
-			commit = "b30a830"
+			commit = "69388e8"
 		})
 		use({
 			"p00f/nvim-ts-rainbow",

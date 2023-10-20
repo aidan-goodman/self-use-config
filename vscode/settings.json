@@ -87,6 +87,9 @@
 	// ====================== wsl config ======================
 	// backup cmd: code --list-extensions > extensions.json && sed -i 's/.*/\t\t\"&\",/' extensions.json && sed -i '$ s/.$//' extensions.json &&sed -i '1i {\n\t\"recommendations\": [' extensions.json && sed -i '$a \\t]\n}' extensions.json
 	"git.confirmSync": false,
+	"git.mergeEditor": true,
+	"git.ignoreLegacyWarning": true,
+	"diffEditor.ignoreTrimWhitespace": false,
 	"GitCommitPlugin.MaxSubjectCharacters": 30,
 	"gitlens.advanced.messages": {
 		"suppressGitVersionWarning": true
@@ -131,7 +134,6 @@
 	},
 	"go.toolsManagement.autoUpdate": true,
 	"python.languageServer": "Pylance",
-	"python.formatting.provider": "none",
 	"[python]": {
 		"editor.defaultFormatter": "ms-python.black-formatter"
 	},
