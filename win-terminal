@@ -32,9 +32,6 @@
             "keys": "ctrl+shift+f"
         },
         {
-            "command": "unbound"
-        },
-        {
             "command": 
             {
                 "action": "splitPane",
@@ -42,6 +39,9 @@
                 "splitMode": "duplicate"
             },
             "keys": "alt+shift+d"
+        },
+        {
+            "command": "unbound"
         }
     ],
     "copyFormatting": "none",
@@ -90,7 +90,7 @@
             {
                 "guid": "{58ad8b0c-3ef8-5f4d-bc6f-13e4c00f2530}",
                 "hidden": false,
-                "icon": "http://assets.aidanblog.top/icon/debian_linux.png",
+                "icon": "https://aidanblog.top/images/debian-logo.png",
                 "name": "debian",
                 "source": "Windows.Terminal.Wsl"
             },
@@ -104,7 +104,7 @@
                 "commandline": "ssh -p 2222 songjunxiao@fort.ishumei.com -i C:\\Data_Files\\Config_Files\\shumei_sshkey\\songjunxiao-jumpserver.pem",
                 "guid": "{ccbec4c1-7ab6-4b63-a198-84d36c0a294e}",
                 "hidden": false,
-                "icon": "http://assets.aidanblog.top/icon/CentOS.png",
+                "icon": "https://aidanblog.top/images/centos-logo.png",
                 "name": "shumei"
             }
         ]
@@ -343,49 +343,5 @@
         }
     ],
     "theme": "system",
-    "themes": 
-    [
-        {
-            "name": "legacyDark",
-            "tab": 
-            {
-                "background": null,
-                "showCloseButton": "always",
-                "unfocusedBackground": null
-            },
-            "window": 
-            {
-                "applicationTheme": "dark",
-                "useMica": false
-            }
-        },
-        {
-            "name": "legacyLight",
-            "tab": 
-            {
-                "background": null,
-                "showCloseButton": "always",
-                "unfocusedBackground": null
-            },
-            "window": 
-            {
-                "applicationTheme": "light",
-                "useMica": false
-            }
-        },
-        {
-            "name": "legacySystem",
-            "tab": 
-            {
-                "background": null,
-                "showCloseButton": "always",
-                "unfocusedBackground": null
-            },
-            "window": 
-            {
-                "applicationTheme": "system",
-                "useMica": false
-            }
-        }
-    ]
+    "themes": []
 }

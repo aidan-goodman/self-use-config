@@ -303,6 +303,6 @@ export PATH=$PATH:$LOCAL/bin:$GOROOT/bin:$GOPATH/bin:$JAVA_HOME/bin:$MAVEN_HOME/
 git config --global --unset proxy.https
 
 # boot sh
-echo "==========[start]=========="
-bash /etc/init.d/host-config
-echo "==========[ end ]=========="
+# echo "==========[start]=========="
+# bash /etc/init.d/host-config
+# echo "==========[ end ]=========="

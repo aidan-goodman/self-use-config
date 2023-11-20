@@ -3,7 +3,6 @@
 	"explorer.confirmDelete": false,
 	"explorer.confirmDragAndDrop": false,
 	"workbench.statusBar.visible": true,
-	"workbench.activityBar.visible": true,
 	"workbench.iconTheme": "vscode-icons",
 	"workbench.startupEditor": "newUntitledFile",
 	"workbench.colorTheme": "Custom Light by Aidan",
@@ -39,6 +38,7 @@
 	"terminal.integrated.fontFamily": "FuraCode Nerd Font Mono",
 	"terminal.external.windowsExec": "C:\\Program Files\\PowerShell\\7\\pwsh.exe",
 	// remote config
+	"remote.autoForwardPorts": false,
 	"remote.SSH.remotePlatform": {
 		"webdev": "linux"
 	},
@@ -63,6 +63,15 @@
 			],
 			"commands": [
 				"workbench.action.navigateBack"
+			]
+		},
+		{
+			"before": [
+				"g",
+				"i"
+			],
+			"commands": [
+				"editor.action.goToImplementation"
 			]
 		},
 		{
@@ -98,12 +107,12 @@
 	"markdownFormatter.formatULSymbol": false,
 	"markdown.preview.fontSize": 18,
 	"markdown.preview.lineHeight": 1.8,
-	"markdown-preview-enhanced.codeBlockTheme": "atom-light.css",
-	"markdown-preview-enhanced.enableScriptExecution": true,
-	"markdown.preview.doubleClickToSwitchToEditor": false,
-	"markdown-preview-enhanced.enableExtendedTableSyntax": true,
 	"markdown-preview-enhanced.enableTypographer": true,
+	"markdown.preview.doubleClickToSwitchToEditor": false,
+	"markdown-preview-enhanced.enableScriptExecution": true,
 	"markdown-preview-enhanced.enableCriticMarkupSyntax": true,
+	"markdown-preview-enhanced.enableExtendedTableSyntax": true,
+	"markdown-preview-enhanced.codeBlockTheme": "atom-light.css",
 	"markdown-preview-enhanced.mathBlockDelimiters": [
 		[
 			"$$",
@@ -134,10 +143,24 @@
 	},
 	"go.toolsManagement.autoUpdate": true,
 	"python.languageServer": "Pylance",
+	"python.analysis.typeCheckingMode": "basic",
+	"python.analysis.autoImportCompletions": true,
 	"[python]": {
+		"editor.tabSize": 4,
+		"editor.insertSpaces": true,
 		"editor.defaultFormatter": "ms-python.black-formatter"
 	},
+	"black-formatter.interpreter": [
+		"/usr/bin/python3"
+	],
 	"[json]": {
+		"editor.tabSize": 2,
+		"editor.insertSpaces": true,
 		"editor.defaultFormatter": "vscode.json-language-features"
+	},
+	"[php]": {
+		"editor.tabSize": 4,
+		"editor.insertSpaces": true,
+		"editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
 	}
 }
