@@ -2,7 +2,7 @@
 memory=8GB
 
 [experimental]
-autoMemoryReclaim=gradual
+autoMemoryReclaim=dropcache
 networkingMode=mirrored
 dnsTunneling=true
 firewall=true
