@@ -1,8 +1,11 @@
 {
 	"window.commandCenter": false,
+	"window.dialogStyle": "custom",
+	"files.autoGuessEncoding": true,
 	"explorer.confirmDelete": false,
 	"explorer.confirmDragAndDrop": false,
 	"workbench.statusBar.visible": true,
+	"workbench.list.smoothScrolling": true,
 	"workbench.iconTheme": "vscode-icons",
 	"workbench.startupEditor": "newUntitledFile",
 	"workbench.colorTheme": "Custom Light by Aidan",
@@ -17,14 +20,20 @@
 	},
 	// editor config
 	"editor.fontSize": 16,
+	"editor.wordWrap": "on",
+	"editor.formatOnType": true,
 	"editor.formatOnSave": true,
+	"editor.formatOnPaste": true,
 	"editor.insertSpaces": false,
+	"editor.smoothScrolling": true,
+	"editor.cursorBlinking": "smooth",
 	"editor.minimap.enabled": false,
 	"editor.renderWhitespace": "all",
 	"editor.detectIndentation": false,
-	"editor.suggestSelection": "first",
 	"editor.cursorSurroundingLines": 10,
 	"editor.guides.bracketPairs": "active",
+	"editor.suggestSelection": "recentlyUsed",
+	"editor.acceptSuggestionOnEnter": "smart",
 	"editor.unicodeHighlight.nonBasicASCII": false,
 	"editor.bracketPairColorization.enabled": true,
 	"editor.suggest.snippetsPreventQuickSuggestions": false,
@@ -32,6 +41,8 @@
 	"editor.rulers": [
 		120
 	],
+	// debug config
+	"debug.showBreakpointsInOverviewRuler": true,
 	// security config
 	"security.workspace.trust.untrustedFiles": "open",
 	// terminal config

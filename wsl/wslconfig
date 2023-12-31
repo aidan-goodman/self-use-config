@@ -4,7 +4,7 @@ memory=8GB
 [experimental]
 autoMemoryReclaim=dropcache
 networkingMode=mirrored
-dnsTunneling=true
 firewall=true
+dnsTunneling=true
 autoProxy=true
 sparseVhd=true
